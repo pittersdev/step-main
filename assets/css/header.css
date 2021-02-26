@@ -156,7 +156,7 @@ header nav ul li.active {
 header nav ul li.trigger .megaMenu {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
+    transition: visibility 0s, opacity 0.4s linear;
     width: 780px;
     /* 690px base + 60px (total) margin-left from column 2 & 3 + 30px margin-right from column 3 */
     height: 330px;
