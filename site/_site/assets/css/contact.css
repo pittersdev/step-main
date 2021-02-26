@@ -1,18 +1,25 @@
 /* Contact */
+
+
 /* Contact blue filter is on qa.css */
+
 #contact {
-    width: calc(100% - 35px); /* because .fadeIn effect causes body overflow */
+    width: calc(100% - 35px);
+    /* because .fadeIn effect causes body overflow */
     height: 520px;
     padding: 60px 0 60px 0;
     background: url('../img/home/contact.webp') center / cover no-repeat;
     position: relative;
 }
+
 #contact.isVisible {
     width: 100%;
 }
+
 #contact * {
     color: var(--bgColor);
 }
+
 #contact div.center {
     /* margin: calc(520px - 342px) auto 0 auto; */
     display: table;
@@ -20,12 +27,17 @@
     position: relative;
     z-index: 90;
 }
-#contact .left, #contact .right {
+
+#contact .left,
+#contact .right {
     width: 100%
 }
-#contact .right .left, #contact .right .right {
+
+#contact .right .left,
+#contact .right .right {
     width: 50%;
 }
+
 #contact .left h2.en {
     text-align: center;
     font-size: 14px;
@@ -33,33 +45,42 @@
     font-family: brandon-grotesque, sans-serif;
     font-weight: 700;
 }
+
 #contact .left h2 {
     margin: 0;
     font-size: 32px;
     text-align: center;
 }
-#contact .right p, #contact .right h4 {
+
+#contact .right p,
+#contact .right h4 {
     margin: 0;
 }
+
 #contact .right h4 {
     font-size: 14px;
 }
+
 #contact .right .button.bright {
     width: 100%;
     height: 100px;
     font-size: 20px;
     margin: 40px 0 20px 0;
 }
+
 #contact .right .right .icon {
     display: inline-block;
 }
+
 #contact .right p strong {
     font-size: 20px;
 }
+
 #contact .right p.legend {
     font-size: 12px;
     clear: both;
 }
+
 @media (min-width: 520px) {
     #contact .right h4 {
         font-size: 18px;
@@ -74,11 +95,13 @@
         margin-top: 10px;
     }
 }
+
 @media (min-width: 1024px) {
     #contact {
-        padding: 100px 0 100px 0;
+        padding: 155px 0 100px 0;
     }
-    #contact .left, #contact .right {
+    #contact .left,
+    #contact .right {
         float: left;
         width: 50%
     }
@@ -110,10 +133,18 @@
         margin: 0 0 20px 0;
     }
 }
+
+
 /*  */
+
+
 /* Contact page */
+
 section#form h2.principal,
-section#form p.principal {margin: 0 0 45px 0}
+section#form p.principal {
+    margin: 0 0 45px 0
+}
+
 section#form #stepGuide {
     width: 70%;
     margin: 0 auto 80px auto;
@@ -124,10 +155,12 @@ section#form #stepGuide {
     list-style: none;
     padding: 0;
 }
+
 section#form #stepGuide li {
     position: relative;
     text-align: center;
 }
+
 section#form #stepGuide li::after {
     width: 20px;
     height: 20px;
@@ -139,6 +172,7 @@ section#form #stepGuide li::after {
     top: -10px;
     left: calc(50% - 10px);
 }
+
 section#form #stepGuide li::before {
     width: 100%;
     height: 1px;
@@ -149,16 +183,21 @@ section#form #stepGuide li::before {
     content: "";
     position: absolute;
 }
+
 section#form #stepGuide li::before:last-child {
     display: none;
     background: transparent;
 }
+
 section#form #stepGuide li.active {
     color: var(--mainColor);
 }
-section#form #stepGuide li.active::after, section#form #stepGuide li.active::before {
+
+section#form #stepGuide li.active::after,
+section#form #stepGuide li.active::before {
     background: var(--mainColor);
 }
+
 section#form h3 {
     width: 100%;
     clear: both;
@@ -166,57 +205,88 @@ section#form h3 {
     font-size: 16px;
     font-weight: 500;
 }
+
 section#form h3 span {
     margin-left: 15px;
     color: var(--red);
     font-size: 12px;
 }
-section#form ul.grid-2, section#form div.margin {
+
+section#form ul.grid-2,
+section#form div.margin {
     margin: 0 0 50px 0;
     padding: 0;
     list-style: none;
 }
+
 section#form ul.grid-2 li {
     margin: 0 0 20px 0;
     color: var(--planeColor)
 }
+
+
 /* Input */
-section#form input, section#form button {
+
+section#form input,
+section#form button {
     outline: none;
     border: none;
 }
-section#form input[type=text], section#form input[type=tel], section#form input[type=number] {
+
+section#form input[type=text],
+section#form input[type=tel],
+section#form input[type=number] {
     width: 100%;
     padding: 30px;
     border: 1px solid var(--paleColor);
     color: var(--planeColor)
 }
+
+
 /* Chrome, Safari, Edge, Opera */
+
 section#form input::-webkit-outer-spin-button,
 section#form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
+
 /* Firefox */
+
 section#form input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
-section#form input[type=text]::placeholder, section#form input[type=tel]::placeholder, section#form input[type=number]::placeholder {
-    color: #aab2b3; /* this color is better, because "paleColor" isn't a color for all displays. In some of them, the placeholder literally "dissapears" with "paleColor", because doesn't have contrast with background's input */
+
+section#form input[type=text]::placeholder,
+section#form input[type=tel]::placeholder,
+section#form input[type=number]::placeholder {
+    color: #aab2b3;
+    /* this color is better, because "paleColor" isn't a color for all displays. In some of them, the placeholder literally "dissapears" with "paleColor", because doesn't have contrast with background's input */
 }
-section#form input[type=text]:hover::placeholder, section#form input[type=tel]:hover::placeholder, section#form input[type=number]:hover::placeholder {
+
+section#form input[type=text]:hover::placeholder,
+section#form input[type=tel]:hover::placeholder,
+section#form input[type=number]:hover::placeholder {
     /* border-color: var(--planeColor); */
     color: var(--subColor);
 }
-section#form input[type=text]:focus, section#form input[type=tel]:focus, section#form input[type=number]:focus {
+
+section#form input[type=text]:focus,
+section#form input[type=tel]:focus,
+section#form input[type=number]:focus {
     border-color: var(--planeColor);
 }
-section#form input[type=text]:invalid, section#form input[type=tel]:invalid, section#form input[type=number]:invalid {
+
+section#form input[type=text]:invalid,
+section#form input[type=tel]:invalid,
+section#form input[type=number]:invalid {
     border: 1px solid var(--paleColor);
     border-left: 1px solid var(--red);
 }
-section#form #postalCodeWrapper .addOn, section#form #postalCode .check {
+
+section#form #postalCodeWrapper .addOn,
+section#form #postalCode .check {
     background: var(--paleColor);
     width: 55px;
     border: 1px solid var(--paleColor);
@@ -227,6 +297,7 @@ section#form #postalCodeWrapper .addOn, section#form #postalCode .check {
     color: var(--planeColor);
     float: left;
 }
+
 section#form #postalCodeWrapper input[type=number] {
     width: 230px;
     float: left;
@@ -235,6 +306,7 @@ section#form #postalCodeWrapper input[type=number] {
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 400;
 }
+
 section#form #postalCodeWrapper button.check {
     width: 230px;
     padding: 30px;
