@@ -1,103 +1,115 @@
 /* Works */
-#works{
-  background: var(--paleColor);
- 
+
+#works {
+    background: var(--paleColor);
 }
+
+
 /* #works h2.en{
   margin-top:60px;
   margin-bottom: 12px;
 } */
-#works h2.en+h2{
-  margin-bottom: 25px;
-}
-#works h2.en+h2+h2{
-  margin-bottom: 60px;
-}
-#works div.carouselWrapper{
-  width: 100vw;
-  max-width: 100vw;
-  height:400px;
-  overflow: hidden;
-  position: relative;
-  margin: 60px 0 30px 0;
-  transition: 2s;
-}
-#works div.carouselWrapper span {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 40%;
-  background-color:white;
-  cursor: pointer;
-  left: 20px;
-  z-index: 1;
-  letter-spacing: 10px;
-  text-align: left;
-  background-image: url('../img/icon/arrow-left-blue.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+
+#works h2.en+h2 {
+    margin-bottom: 25px;
 }
 
-#works div.carouselWrapper span:nth-of-type(2){
-  left: calc(100% - 48px - 20px);
-  text-align: right;
-  background-image: url('../img/icon/arrow-right-blue.svg');
+#works h2.en+h2+h2 {
+    margin-bottom: 60px;
 }
-#works div.carouselWrapper .wrapper{
-  width: 100%;
-  height: 300px;
-  padding-top: 30px;
-  background: var(--paleColor);
-  display: flex;
-  justify-content: left;
-  overflow: hidden;
+
+#works div.carouselWrapper {
+    width: 100vw;
+    max-width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 60px 0 30px 0;
+    transition: 2s;
 }
-#works div.carouselWrapper .wrapper::-webkit-scrollbar{
-  visibility: hidden;
+
+#works div.carouselWrapper span {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 28%;
+    background-color: white;
+    cursor: pointer;
+    left: 20px;
+    z-index: 1;
+    letter-spacing: 10px;
+    text-align: left;
+    background-image: url('../img/icon/arrow-left-blue.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#works div.carouselWrapper .wrapper div.ccard{
-  min-width: 260px;
-  height: 276px;
-  margin:0 30px 0 30px;
-  position: relative;
-  left: 0;
-  text-align: center;
-  background:white;
-  transition: margin var(--animation-timing) ease-in-out;
-  transition: var(--animation-timing-xl);
-}  
-#works div.carouselWrapper .wrapper div.ccard:hover{
-  margin: -30px 30px 0 30px;
-  box-shadow: 0 5px 20px var(--shadow);
-} 
-#works div.carouselWrapper .wrapper div.ccard .image{
- width: 100%;
- height: 190px;
- background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
-}  
-#works div.carouselWrapper .wrapper div.ccard h2{
-  width: 100%;
-  height: 86px;
-  font-size: 16px;
-  padding: 25px;
-  font-family: noto-sans-cjk-jp, sans-serif;
-  font-weight: 500;
-}  
+
+#works div.carouselWrapper span:nth-of-type(2) {
+    left: calc(100% - 48px - 20px);
+    text-align: right;
+    background-image: url('../img/icon/arrow-right-blue.svg');
+}
+
+#works div.carouselWrapper .wrapper {
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    background: var(--paleColor);
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+}
+
+#works div.carouselWrapper .wrapper::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+#works div.carouselWrapper .wrapper div.ccard {
+    min-width: 260px;
+    height: 276px;
+    margin: 0 30px 0 30px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    background: white;
+    transition: margin var(--animation-timing) ease-in-out;
+    transition: var(--animation-timing-xl);
+}
+
+#works div.carouselWrapper .wrapper div.ccard:hover {
+    margin: -30px 30px 0 30px;
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+#works div.carouselWrapper .wrapper div.ccard .image {
+    width: 100%;
+    height: 190px;
+    background-image: url('https://blog.hubspot.com/hubfs/design-projects.jpg');
+}
+
+#works div.carouselWrapper .wrapper div.ccard h2 {
+    width: 100%;
+    height: 86px;
+    font-size: 16px;
+    padding: 25px;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+}
+
 @media (min-width: 1024px) {
-  #works div.carouselWrapper span {
-    width: 60px;
-    height: 60px;
-  }
-  #works div.carouselWrapper span:nth-of-type(2){
-    left: calc(100% - 60px - 20px);
-  }
-  #works div.carouselWrapper .wrapper div.ccard h2{
-    font-size: 20px;
-  }
-  #works .button.center {
-    margin-top: 40px !important;
-  }
+    #works div.carouselWrapper span {
+        width: 60px;
+        height: 60px;
+    }
+    #works div.carouselWrapper span:nth-of-type(2) {
+        left: calc(100% - 60px - 20px);
+    }
+    #works div.carouselWrapper .wrapper div.ccard h2 {
+        font-size: 20px;
+    }
+    #works .button.center {
+        margin-top: 40px !important;
+    }
 }
-@media (min-width: 1280px) {
-  
-}
+
+@media (min-width: 1280px) {}
