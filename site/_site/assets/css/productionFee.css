@@ -1,0 +1,57 @@
+/* #productionFee {
+    float: right;
+}
+#productionFee .container, #productionFee .grid-2 {
+    width: 100%;
+    margin-bottom: 80px;
+}
+#productionFee .image {
+    margin: 0;
+    min-height: 500px;
+    background-image: url('../img/home/product.webp');
+}
+#productionFee .left, #productionFee .image {
+    float: right;
+}
+#productionFee .left {
+    padding-top: 85px;
+    margin: 0 150px 0 0;
+    width: calc(35% - 150px)
+} */
+/*  */
+#productionFee {
+    float: right;
+}
+#productionFee .container, #productionFee .grid-2 {
+    width: 100%;
+    margin: 0;
+    margin: 80px 0 80px 0; /* supplement */
+}
+#productionFee .image {
+    width: calc(100% - 58px);
+    height: 500px;
+    clear: both;
+    margin: 0;
+    background-image: url('../img/home/product.webp');
+    background-position: left center;
+    float: right;
+}
+#productionFee .left {
+    width: calc(90% - 40px);
+    clear: both;
+    margin: 50px 40px 0 0;
+    float: right;
+}
+@media (min-width: 1280px) {
+    #productionFee .image {
+        width: 50%;
+        height: 600px;
+        clear: none;
+    }
+    #productionFee .left {
+        margin: 85px 150px 0 0;
+        width: calc(35% - 150px);
+        clear: none;
+        float: right;
+    }
+}

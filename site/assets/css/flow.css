@@ -1,0 +1,109 @@
+/* Flow */
+#flow .icon {display: block}
+#flow h2 {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+#flow p {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 16px;
+    font-weight: Regular;
+}
+#flow ul#basicServices li h4.title{
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+#flow {
+    /* background-color: var(--bgColor); */
+    width: 100%;
+}
+#flow h2.en {
+    margin:0 0 20px 0 ;
+    text-align: center;
+}
+#flow h2 {
+    margin:0 0 45px 0 ;
+    text-align: center;
+}
+#flow p {
+    margin:0 0 80px 0 ;
+    text-align: center;
+}
+
+#flow ul#basicServices {
+  max-width: 260px;
+  display: table;
+  margin: 0 auto 40px auto;
+}
+#flow ul#basicServices li {
+  width: 130px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+#flow ul#basicServices li .icon{
+  width: 65px;   
+  height: 65px;  
+  padding:0 72px 0 73px;
+  background: none center / contain no-repeat;
+  margin: 0 auto;
+}
+@media (min-width: 520px) {
+  #flow ul#basicServices {
+    max-width: 420px;
+  }
+  #flow ul#basicServices li {
+    width: 210px;
+    
+  }
+}
+@media (min-width: 960px) {
+  #flow ul#basicServices {
+    max-width: 840px;
+  }
+}
+@media (min-width: 1280px) {
+  #flow ul#basicServices {
+    max-width: 1050px;
+  }
+}
+
+
+#flow ul#basicServices li.contactUs .icon{
+  background-image: url('../img/home-icon/flow-1.svg');
+}
+#flow ul#basicServices li.meeting .icon{
+  background-image: url('../img/home-icon/flow-2.svg');    
+}
+#flow ul#basicServices li.planning .icon{
+  background-image: url('../img/home-icon/flow-3.svg');    
+}
+#flow ul#basicServices li.contract .icon{
+  background-image: url('../img/home-icon/flow-4.svg');    
+}
+#flow ul#basicServices li.topDesign .icon{
+  background-image: url('../img/home-icon/flow-5.svg');    
+}
+#flow ul#basicServices li.lowerPageProduction .icon{
+  background-image: url('../img/home-icon/flow-6.svg');    
+}
+#flow ul#basicServices li.siteConstruction .icon{
+  background-image: url('../img/home-icon/flow-7.svg');    
+}
+#flow ul#basicServices li.testUp .icon{
+  background-image: url('../img/home-icon/flow-8.svg');    
+}
+#flow ul#basicServices li.siteRelease .icon{
+  background-image: url('../img/home-icon/flow-9.svg');    
+}
+#flow ul#basicServices li.use .icon{
+  background-image: url('../img/home-icon/flow-10.svg');    
+}
+#flow ul#basicServices  h4.title{
+
+  margin-top: 20px;
+  margin-bottom:0;/*CHROME INTERPRETA MARGIN SIN ES TA PROPIEDAD, NO PROBADO EN OTROS NAVEGADORES*/
+   
+}

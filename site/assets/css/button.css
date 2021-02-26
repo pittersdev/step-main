@@ -1,0 +1,105 @@
+/* Buttons */
+.button {
+    /* min-width: 215px; */
+    min-width: 80%;
+    height: 60px;
+    margin: 30px 0 30px 0;
+    clear: both;
+    padding: 20px;
+    border: none; /* prevents border-bottom from some links */
+    border: 1px solid var(--mainColor);
+    display: block;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+    background: transparent;
+    position: relative;
+    color: var(--mainColor);
+    transition: var(--animation-timing) ease-out;
+    /* float: left; */
+}
+    .button.center {
+        margin: 30px auto 30px auto !important;
+    }
+    main .button::after { /* this effect is only used in index.html >> <main> */
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -10px;
+        left: 10px;
+        /* margin: 15px 0 0 15px; */
+        background: var(--paleColor);
+        z-index: -1;
+        transition: var(--animation-timing) ease-out;
+    }
+    main .button:hover::after, main .button.blue:hover::after { /* this effect is only used in index.html >> <main> */
+        bottom: 0;
+        left: 0;
+    }
+.button.slim {
+    margin: 15px 0 15px 0;
+}
+.button.bright {
+    background: var(--conversionColor);
+    color: var(--bgColor);
+    border: none;
+}
+
+
+.button.bright:hover {
+    background: var(--conversionColorAlt);
+}
+header.alt .button.header { /* while the header has a background, this button needs a little re-position because with -20px isn't vertical aligned */
+    margin-top: -12px;
+}
+.button.header {
+    margin-top: -20px;
+    text-align: center;
+    border: none;
+    /* margin-right: 17px; */
+    display: inline-block;
+    float: none;
+    padding: 15px 30px 0 30px;
+}
+.button.blue {
+    border-color: var(--bgColor);
+    color: #fff;
+}
+.button.blue::after {
+    background: var(--mainColor);
+}
+.swipe {
+    width:100%;
+    border:none;
+    background-color:var(--conversionColor);
+    box-shadow:inset 0 0 0 0 var(--conversionColorAlt);
+    transition: var(--animation-timing) ease-out;
+    outline:none;    
+}
+.swipe.slow { /* useful for small buttons */
+    transition: var(--animation-timing-xl) ease-out;
+}
+.swipe:hover, .swipe.slow:hover {
+    box-shadow:inset 1000px 0 0 0 var(--conversionColorAlt);
+    cursor:pointer;
+}
+/* @media (min-width: 520px) {
+    .button {
+        min-width: 315px;
+    }
+} */
+@media (min-width: 1024px) {
+    .button {
+        min-width: 390px;
+        /* padding: 30px 20px 30px 20px; */
+    }
+}
+@media (min-width: 1280px) {
+    .button {
+        margin: 40px 0 40px 0;
+    }
+    .button.center {
+        margin: 40px auto 40px auto;
+    }
+}

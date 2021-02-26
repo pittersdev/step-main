@@ -1,0 +1,160 @@
+/* Services */
+
+#services .icon {
+    display: block;
+}
+#services p.center, h2.center{
+    margin: 0 20px 0 20px;
+}
+#services ul#basicServices p.center {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+}
+#services ul#basicServices p strong {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+}
+
+#services ul#basicServices {
+    width: 360px;
+    margin: 80px auto 35px auto;
+    display: table;
+}
+#services ul#basicServices li {
+    width: 175px;
+    height: 105px;
+    margin-bottom: 45px;
+}
+#services ul#basicServices li .icon {
+    width: 65px;
+    height: 65px;
+    background: none center / contain no-repeat;
+    /* border-radius: 100%; */
+}
+#services ul#basicServices li.webDesign .icon {
+    background-image: url('../img/home-icon/service-1.svg');
+}
+#services ul#basicServices li.operationalSupport .icon {
+    background-image: url('../img/home-icon/service-2.svg');
+}
+#services ul#basicServices li.printMedia .icon {
+    background-image: url('../img/home-icon/service-3.svg');
+}
+#services ul#basicServices li.logoDesign .icon {
+    background-image: url('../img/home-icon/service-4.svg');
+}
+#services ul#basicServices li.illustrationCharacter .icon {
+    background-image: url('../img/home-icon/service-5.svg');
+}
+#services ul#basicServices li.photography .icon {
+    background-image: url('../img/home-icon/service-6.svg');
+}
+#services ul#basicServices li p {
+    margin-top: 20px;
+}
+@media (min-width: 600px) {
+    #services ul#basicServices {
+        width: 525px;
+    }
+}
+@media (min-width: 1280px) {
+    #services ul#basicServices {
+        margin: 80px auto 80px auto;
+        width: 1050px;
+    }
+    #services ul#basicServices li {
+        margin-bottom: 0;
+    }
+}
+#services ul#conclusionServices.grid-3 {
+    width: 350px;
+    display: table;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+}
+#services ul#conclusionServices li {
+    width: 350px;
+    margin-right: 0;
+    background: var(--bgColor);
+    /* box-shadow: 0 0 5px var(--shadow); */
+    margin-bottom: 40px;
+}
+#services ul#conclusionServices li.last {
+    margin-right: 0;
+}
+#services ul#conclusionServices li .image {
+    width: 100%;
+    height: 250px;
+    transition: background-size var(--animation-timing-s) ease-in;
+    -moz-transition: background-size var(--animation-timing-s) ease-in;
+    -ms-transition: background-size var(--animation-timing-s) ease-in;
+    -o-transition: background-size var(--animation-timing-s) ease-in;
+    -webkit-transition: background-size var(--animation-timing-s) ease-in;
+    background-size: 100%;
+}
+#services ul#conclusionServices li .image:hover {
+    background-size: 110%;
+}
+#services ul#conclusionServices li .details {
+    padding: 0 10px 0 10px;
+}
+#services ul#conclusionServices li.webDesign .image {
+    background-image: url('../img/home/01topsample.webp'); /* IE11 doesn't support webp */
+}
+#services ul#conclusionServices li.updateAndSupport .image {
+    background-image: url('../img/home/02topsample.webp'); /* IE11 doesn't support webp */
+}
+#services ul#conclusionServices li.graphicProduction .image {
+    background-image: url('../img/home/02_letterhead.webp'); /* IE11 doesn't support webp */
+}
+#services button.center {
+    margin: 40px auto 0 auto;
+}
+@media (min-width: 1280px) {
+    #services ul#conclusionServices.grid-3 {
+        width: 1050px;
+        display: table;
+        clear: both;
+    }
+    #services ul#conclusionServices li {
+        width: 340px;
+        margin-right: 15px;
+        height: 520px;
+        margin-bottom: 0;
+    }
+    #services ul#conclusionServices li .details {
+        padding: 0 20px 0 20px;
+    }
+}
+@media (min-width: 2560px) {
+    #services ul#conclusionServices h3 {
+        color: var(--mainColor);
+        margin: 55px 0 30px 0;
+    }
+    #services ul#conclusionServices.grid-3 {
+        width: 1750px;
+    }
+    #services ul#conclusionServices li {
+        width: 550px;
+        margin-right: 30px;
+    }
+    #services ul#conclusionServices li .image {
+        height: 416px;
+    }
+}
+@media (min-width: 3840px) {
+    #services ul#conclusionServices h3 {
+        color: var(--mainColor);
+        margin: 55px 0 30px 0;
+    }
+    #services ul#conclusionServices.grid-3 {
+        width: 2080px;
+    }
+    #services ul#conclusionServices li {
+        width: 660px;
+    }
+    #services ul#conclusionServices li .image {
+        height: 500px;
+    }
+}

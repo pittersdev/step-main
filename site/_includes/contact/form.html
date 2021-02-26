@@ -1,0 +1,140 @@
+<section id="form">
+    <h2 class="en">CONTACT FORM / ESTIMATE</h2>
+    <h2 class="principal">お問い合わせフォーム・無料見積もり</h2>
+    <p class="principal">
+        お見積やお打ち合わせに関すること、その他ご質問やご要望などお気軽にお問い合わせください。<br />
+        お問い合わせは、下記のフォームより内容をご記入の上、フォーム下のボタンをクリックしてください。お問い合わせ内容を確認後、２営業日以内に電話またはメールにてご連絡いたします。数日経っても弊社からの連絡がない場合は、お手数ですが弊社までご一報ください。
+    </p>
+    <ul id="stepGuide" class="grid-3">
+        <li class="active">
+            <p>入力</p>
+        </li>
+        <li>
+            <p>確認</p>
+        </li>
+        <li>
+            <p>完了</p>
+        </li>
+    </ul>
+
+    <div class="margin">
+    <h3>お問合せ内容 <span class="required">※必須</span></h3>
+    <ul class="grid-2">
+        <li>
+            <input type="checkbox" name="" id="webDesign">
+            <label for="webDesign">ホームページ制作</label> 
+        </li>
+        <li>
+            <input type="checkbox" name="" id="illustration">
+            <label for="illustration">イラス・キャラクター制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="support">
+            <label for="support">運用・サポートについて</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="freeAssistance">
+            <label for="freeAssistance">無料見積</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="graphicProduction">
+            <label for="graphicProduction">印刷物媒体・グラフィック制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="meetingRequest">
+            <label for="meetingRequest">打ち合わせ依頼</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="logoProduction">
+            <label for="logoProduction">ロゴ制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="other">
+            <label for="other">その他</label>
+        </li>
+    </ul>
+    </div>
+
+    <div class="margin">
+        <h3>お名前 <span class="required">※必須</span></h3>
+        <input type="text" id="name" placeholder="田中　太郎" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>ふりがな <span class="required">※必須</span></h3>
+        <input type="text" id="furigana" placeholder="やまだ　たろう" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>メールアドレス <span class="required">※必須</span></h3>
+        <input type="text" id="email" placeholder="メールアドレス" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>電話番号 <span>ハイフン不要</span></h3>
+        <input type="text" id="telephone" placeholder="例）09000000000" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>企業・店舗名 <span class="required">※必須</span></h3>
+        <input type="text" id="enterpriseName" />
+    </div>
+
+    <div id="postalCodeWrapper" class="margin">
+        <h3>郵便番号 <span>ハイフン不要</span></h3>
+        <div class="addOn">〒</div> <!-- aside of #postalCode -->
+        <input type="number" name="" placeholder="例）1000001" id="postalCode" autocomplete="off" />
+        <button class="check">住所を自動入力</button> <!-- Ingrese automáticamente la dirección -->
+    </div>
+
+    <div class="margin">
+        <h3>住所</h3>
+        <input type="text" id="direction">
+    </div>
+
+    <div class="margin">
+        <h3>項目名ラジオタイプ</h3>
+        <div class="grid-2">
+            <div>
+                <input type="radio" name="radioTest" id="radioTest01">
+                <label for="radioTest01">項目ラジオ01</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest02">
+                <label for="radioTest02">項目ラジオ02</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest03">
+                <label for="radioTest3">項目ラジオ03</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest04">
+                <label for="radioTest04">項目ラジオ04</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="margin">
+        <h3>項目セレクト</h3> <!-- Seleccionar articulo -->
+        <select name="article" id="article">
+            <option value="">当てはまるものを選択してください</option>
+        </select>
+    </div>
+
+    <div class="margin">
+        <h3>お問合せ内容 <span class="required">※必須</span></h3>
+        <textarea name="" id=""></textarea>
+    </div>
+
+    <div class="margin">
+        <h3>個人情報の取り扱いについて</h3>
+        <p class="border">
+            本入力フォーム及び、メールでご連絡頂きましたお客様の個人情報につきましては、厳重に管理を行っております。法令等に基づき正規の手続きによって司法審査機関により開示要求が行われた場合を除き、第三者に開示もしくは、提供することはございません。
+        </p>
+    </div>
+
+    <input type="checkbox" name="" id="TyC">
+    <label for="TyC">個人情報の取り扱いに同意する</label>
+
+    <button class="contact">確認</button>
+</section>

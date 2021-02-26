@@ -1,0 +1,288 @@
+/*FOOTER*/
+
+footer {
+    background-color: var(--bgColor);
+    width: 99%;
+    padding: 0 20px 0 20px; 
+}
+footer ul.center{
+    padding-top: 30px;
+   
+}
+footer ul.links li a {
+    transition: padding-left var(--animation-timing) ease-out;
+}
+footer ul.links li a:hover {
+    padding-left: 20px;
+}
+footer ul li a {
+    display: block; /* link full-fill parent element thanks to display: block */
+    color: var(--mainColor);
+}
+footer ul li a h2 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+}
+footer ul li a p {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+}
+footer p.enterpriseName {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 60px 0 60px 0;
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+footer ul.center li.facebook{
+    background-image: url('../img/icon/iconmonstr-facebook-1.svg');
+    width: 18px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+footer ul.center li.instagram{
+    background-image: url('../img/icon/iconmonstr-instagram-11.svg');
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+}
+footer ul.center li.youtube{
+    background-image: url('../img/icon/iconmonstr-youtube-8.svg');
+    
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+   
+}
+footer ul.center li.pinterest{
+    background-image: url('../img/icon/pinterest-.svg');
+    
+   width: 30px;
+   height: 30px;
+   background-repeat: no-repeat;
+   
+}
+footer h3{
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--subColor);
+}
+footer div.center ul li h2{
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer div.center ul li p{
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+    font-weight: medium;
+}
+
+footer .left{
+    width: 100%;
+    text-align: left;
+    margin: 0 7.20% 0 7.20%;
+    margin-top: 80px;
+    
+}
+
+footer .left .logo{
+    background-image: url('../img/FirstLogo.png') ;
+    background-size:cover;
+    width: 200px;
+    height: 36px;
+}
+footer .left h3{
+    margin-top: 0;
+}
+footer .left ul li{
+    width: 100%;
+    color: var(--planeColor);
+}
+footer .left ul li:first-child{
+    font-weight: bold;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 16px;
+}
+footer .left ul li:nth-child(3){
+    font-weight: bold;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+}
+footer div.center{
+ display: none;
+}
+footer div.right{
+display: none;
+   }
+footer  ul.center {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    list-style: none;
+    text-align: center;
+    
+} 
+footer ul.center.icons {
+    margin: 0 auto 40px auto;
+    display: none;
+}
+footer #goUp {
+    background: var(--bgColor);
+    box-shadow: 0 0 10px var(--shadow);
+    padding: 22px 10px 10px 10px; /* for perfect horizontal centering */
+    color: var(--mainColor);
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    line-height: 0;
+    text-align: center;
+    opacity: 0;
+    width: 48px;
+    height: 48px;
+    transition: var(--animation-timing-s) ease-out;
+}
+footer #goUp.isVisible {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
+footer #goUp::before {
+    transition: .1s ease-out;
+}
+@media (min-width:600px){
+footer{
+    padding: 0;
+}
+/*Left section*/
+footer div.left{
+    width: 100%;
+     margin: 100px 0 80px 0;
+     padding-left: 30px;
+     
+     }
+footer .left .logo{
+    width: 224px;
+    height: 40px;
+}    
+footer .left .encabezado{
+  width: 50%;
+    
+    float: left;
+  
+    }
+ 
+
+footer .left ul{
+    width: 50%;
+
+  
+  float:right;
+    
+}
+  /*Center section*/
+  footer div.center{
+    width: 50%;
+    display: block;
+    float:left;
+    padding-left: 30px;
+    margin: 0px 0 80px 0;
+    
+   
+ } 
+ footer div.center ul{
+     width: 100%;
+ }
+ footer div.center ul li {
+    width:43%;
+    margin: 0;
+    }
+    /*Right section*/
+ footer div.right{
+    display: block;
+    width: 50%;
+    float:left;
+    padding-left:30px;
+    margin: 0px 0 80px 0;
+    
+}   
+footer .right ul li{
+    margin-bottom: 30px;
+    width:40%;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 13px;
+    font-weight: medium;
+
+}    
+  /*END OF FOOTER AND SM*/
+  footer ul.center{
+    clear: both;
+    margin-bottom: 40px;
+}
+footer p.center{
+    margin-bottom: 40px;
+}
+
+}
+@media (min-width: 1280px){
+  footer{
+      padding: 0;
+      
+  }
+  footer p.enterpriseName {
+      font-size: 16px;
+      margin: 40px 0 40px 0;
+  }
+  footer ul.center.icons {
+      display: flex;
+  }
+}
+@media (min-width: 1600px) {
+    /*Left section*/
+  footer div.left{
+    width: 33%;
+     float:left;
+     padding-left: 50px;
+ }
+ footer .left .encabezado{
+   width: 100% ;
+}
+ footer .left ul{
+    width: 100%;
+ }    
+   /*Center section*/
+   footer div.center{
+     width: 33%;
+     padding-left: 50px;
+     margin: 100px 0 80px 0;
+     
+    
+  }
+  footer .center ul li h2{
+      margin-bottom: 15px;
+ 
+  }
+  footer .center ul li p{
+     margin-bottom: 40px;
+ 
+ }
+    /*Right section*/
+  footer div.right{
+     display: block;
+     width: 33%;
+     float:left;
+     padding-left: 50px;
+     margin: 100px 0 80px 0;
+     
+ }
+ footer ul.center{
+     width: 100%;
+     padding-left: 0;
+ }
+}

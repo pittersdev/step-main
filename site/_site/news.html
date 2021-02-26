@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Step Design</title>
+    <!-- OpenGraph SEO. Note that og:image, og:video, etc support multiple instances. The media will be transformed in an array for social networks -->
+    <meta property="og:title" content="First Step Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:4000" /> <!-- Example -->
+    <meta property="og:image" content="https://1step.com/assets/img/example.jpg" />
+    <meta property="og:image:alt" content="Here you can put a description of the image" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- 
+        This could be usefull in the future :)
+        <meta property="og:video" content="" /> 
+    -->
+    <!-- Native SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="View news on First Step's website" />
+    <meta name="keywords" content="web, development, design, programming, service" /> <!-- Useless for Google -->
+    <!-- 
+        Usefull for posts of the blog
+        <meta name="author" content="author" />
+    -->
+    <!--
+        Usefull for posts of the blog or any content with &copy
+        <meta name="copyright" content="property" />
+    -->
+    <!-- Basic CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/news.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/intro.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/services.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/works.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/aboutUs.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/productionFee.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/blog.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/flow.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/qa.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/compatibility.css" type="text/css" /> <!-- Here, we are loading legacy image formats -->
+    <link rel="stylesheet" href="assets/css/button.css" type="text/css" />
+    <!-- Icon pack -->
+    <link rel="stylesheet" href="assets/css/icons.css" type="text/css" />
+    <!-- Fonts CDNs (later it'll be merged with "chunk.css" and fonts stored locally, not in CDN ) -->
+    <link rel="stylesheet" href="https://use.typekit.net/psc4ucl.css" /> <!-- Brandon Grotesque -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body class="js">
+<header id="header">
+    <div class="logo"></div>
+    <div class="menu removeDesktop">
+        <a class="row cf" onclick="toggleSidebar()">
+            <div class="three col">
+                <div id="hamburger" class="hamburger" style="padding-top: 5px">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </a>
+    </div></div>
+    <nav class="removeMobile">
+        <ul class="minimal inline">
+            <li class="active">
+                <a href="#aboutUs" title="#">ABOUT US</a>
+            </li>
+            <li class="trigger">
+                <a href="#services" title="#">SERVICE</a>
+                <div class="megaMenu grid-3">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <a href="#">
+                                <h2 class="en">WEBSITE PRODUCE</h2>
+                                <h2>Webサイト制作</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">WEBSITE SUPPORT</h2>
+                                <h2>Webサイトサポート</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">GRAPHIC PRODUCE</h2>
+                                <h2>フラフィック制作</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <a href="#">
+                                <h2 class="en">LOGO DESIGN</h2>
+                                <h2>ロゴデザイン</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">CHARACTER / ILLUSTRATION</h2>
+                                <h2>イラスト・キャラクター</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">PHOTOGRAPHY</h2>
+                                <h2>写真撮影</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#works" title="#">WORKS</a>
+            </li>
+            <li>
+                <a href="#flow" title="#">FLOW</a>
+            </li>
+            <li>
+                <a href="#productionFee" title="#">PRICE</a>
+            </li>
+            <li class="trigger">
+                <a href="#contact" title="#">COMPANY</a>
+                <div class="megaMenu grid-3 last">
+                    <div id="aboutUsImage" class="left image"></div>
+                    <ul class="center minimal">
+                        <li>
+                            <a href="#">
+                                <h2 class="en">COMPANY GUIDE</h2>
+                                <h2>会社概要</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">COMPANY PHILOSOPHY</h2>
+                                <h2>会社理念</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">HISTORY</h2>
+                                <h2>沿革</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right minimal">
+                        <li>
+                            <a href="#">
+                                <h2 class="en">MESSAGE</h2>
+                                <h2>代表者挨拶</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">STAFF</h2>
+                                <h2>スタッフ紹介</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2 class="en">ACCESS</h2>
+                                <h2>アクセス</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="noBorder" style="height: 50px">
+                <a href="#" title="#" class="button header bright swipe slow">無料見積もり</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="sidebar">
+    <div class="logo"></div>
+    <ul>
+        <li>
+            <a href="#aboutUs" title="#" onclick="toggleSidebar()">
+                <strong>私たちとは</strong>
+                <span>ABOUT US</span>
+            </a>
+        </li>
+        <li class="subMenu">
+            <a title="#" onclick="changeSidebarSubMenuStatus('Service');">
+                <strong>サービス</strong>
+                <span>SERVICE</span>
+                <div id="iconService" class="subMenuIcon">+</div>
+            </a>
+            <ul id="subMenuService" style="display: none">
+                <li>
+                    <a href="#" onclick="toggleSidebar()">SERVICE TOP</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">WEB PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">WEB SUPPORT</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">GRAPHIC PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">LOGO PRODUCE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">CHARACTER & ILLUSTRATION</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">PHOTOGRAPHY</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a onclick="changeSidebarSubMenuStatus('Works');" href="#works" title="#">
+                <strong>制作実績</strong>
+                <span>WORKS</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#flow" title="#">
+                <strong>制作の流れ</strong>
+                <span>FLOW</span>
+            </a>
+        </li>
+        <li class="subMenu">
+            <a href="#company" title="#" onclick="changeSidebarSubMenuStatus('Company');">
+                <strong>会社概要</strong>
+                <span>COMPANY</span>
+                <div id="iconCompany" class="subMenuIcon">+</div>
+            </a>
+            <ul id="subMenuCompany" style="display: none">
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY TOP</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY OUTLINE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">MESSAGE</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">COMPANY PHILOSOPHY</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">HISTORY</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">STAFF</a>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSidebar()">ACCESS</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#voice" title="#">
+                <strong>お客様の声</strong>
+                <span>VOICE</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#blog" title="#">
+                <strong>ブログ</strong>
+                <span>BLOG</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#price">
+                <strong>料金</strong>
+                <span>PRICE</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#faq">
+                <strong>よくある質問</strong>
+                <span>FAQ</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="toggleSidebar()" href="#news">
+                <strong>お知らせ</strong>
+                <span>NEWS</span>
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <button class="button blue">お問い合わせ・無料見積もり</button>
+    <button class="button default">
+        <i class="icon-phone"></i>
+        052-414-7327
+    </button>
+    <p class="center">
+        ※受付時間は9:00〜18:00<br/ >
+        定休日は土日（年末年始を除く）
+    </p>
+    <ul class="subMenu footer">
+        <li>
+            <a href="#">サイトのご利用条件</a>
+        </li>
+        <li>
+            <a href="#">プライバシーポリシー</a>
+        </li>
+        <li class="last">
+            <a href="#">サイトマップ</a>
+        </li>
+    </ul>
+</div>
+<main>
+    <div id="wallpaper">
+    <div class="wrapper">
+        <h2 class="en">NEWS</h2>
+        <h2>お知らせ</h2>
+    </div>
+</div>
+<section id="news">
+    <!-- Header of "NEWS LIST" -->
+    <div class="header">
+        <h2 class="en">NEWS LIST</h2>
+        <div class="grid-2">
+            <h2>お知らせ一覧</h2>
+            <p>
+                <a href="#" title="Suscribe to our RSS">RSS <i class="icon-rss"></i></a>
+            </p>
+        </div>
+    </div>
+    <!--  -->
+    <ul id="newsList">
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+        <li class="news grid-2">
+            <a href="#">
+                <p class="date">2021.01.11</p>
+                <p class="content">ニュースのタイトルテキストが入りますニュースのタイトルテキストが入りますニュースのタイトルテキストが入ります</p>
+            </a>
+        </li>
+    </ul>
+    <ul id="navigation">
+    <li class="actualPage">1/8</li>
+    <li class="page">
+        <a href="#">1</a>
+    </li>
+    <li class="page">
+        <a href="#">2</a>
+    </li>
+    <li class="page">
+        <a href="#">3</a>
+    </li>
+    <li class="page">
+        <a href="#">4</a>
+    </li>
+    <li class="page">
+        <a href="#">5</a>
+    </li>
+    <li class="nextPage">
+        <i class="icon-arrow-right"></i>
+    </li>
+</ul>
+</section>
+</main>
+<section id="contact" class="fadeIn">
+    <div class="center container">
+        <div class="left">
+            <h2 class="en">CONTACT</h2>
+            <h2>
+                伝えたいメッセージの<br />
+                魅力を引き出すデザイン
+            </h2>
+        </div>
+        <div class="right">
+            <button class="button bright swipe icon email">お問い合わせ・無料見積もり</button>
+            <div class="left">
+                <h4>お電話でのお問い合わせ</h4>
+            </div>
+            <div class="right">
+                <p>
+                    <i class="icon-phone"></i>
+                    <strong>052-414-7327</strong>
+                </p>
+            </div>
+            <p class="legend">※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="left">
+        <div class="encabezado">
+            <div class="logo"></div>
+            <h3>Business + Creativity = Success </h3>
+        </div>
+        <ul class="minimal inline">
+            <li>ファーストステップデザイン</li>
+            <li>〒 490-1211</li>
+            <li>愛知県あま市篠田長直し12</li>
+            <li>tel. 052-414-7327</li>
+        </ul>
+    </div>
+    <div class="center">
+        <ul class="links minimal inline grid-2">
+            <li><a href="#" title="#">
+                <h2>
+                    ABOUT US
+                </h2>
+                <p>ファーストステップとは</p>
+            </a></li>
+            <li><a href="#blog" title="#">
+                <h2>
+                    BLOG
+                </h2>
+                <p>ブログ一覧</p>
+            </a></li>
+            <li><a href="#services" title="#">
+                <h2>
+                    SERVICE
+                </h2>
+                <p>サービス紹介</p>
+            </a></li>
+            <li><a href="#productionFee" title="#">
+                <h2>
+                    PRICE
+                </h2>
+                <p>料金案内</p>
+            </a></li>
+            <li><a href="#works" title="#">
+                <h2>
+                    WORKS
+                </h2>
+                <p>実績の紹介</p>
+            </a></li>
+            <li><a href="#voice" title="#">
+                <h2>
+                    VOICE
+                </h2>
+                <p>料金案内</p>
+            </a></li>
+            <li><a href="#flow" title="#">
+                <h2>
+                    FLOW
+                </h2>
+                <p>制作の流れ</p>
+            </a></li>
+            <li><a href="#qa" title="#">
+                <h2>
+                    Q&A
+                </h2>
+                <p>よくある質問</p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul class="links minimal inline grid-2">
+            <li>
+                <a href="#" title="#">会社案内</a>
+            </li>
+            <li>
+                <a href="#" title="#">お問い合わせ</a>
+            </li>
+            <li>
+                <a href="#" title="#">会社概要</a>
+            </li>
+            <li>
+                <a href="#" title="#">地図・アクセス</a>
+            </li>
+            <li>
+                <a href="#" title="#">沿革</a>
+            </li>
+            <li>
+                <a href="#" title="#">お知らせ</a>
+            </li>
+            <li>
+                <a href="#" title="#">会社理念</a>
+            </li>
+            <li>
+                <a href="#" title="#">サイトのご利用条件</a>
+            </li>
+            <li>
+                <a href="#" title="#">代表挨拶</a>
+            </li>
+            <li>
+                <a href="#" title="#">プライバシーポリシー</a>
+            </li>
+            <li>
+                <a href="#" title="#">スタップ紹介</a>
+            </li>
+            <li>
+                <a href="#" title="#">サイトマップ</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="center icons fadeIn">
+        <!-- Below chars "F", "I", "Y", "P" are just temporal. Waiting for real icons -->
+        <li class="icon facebook"><a href="#" title="#"></a></li>
+        <li class="icon instagram"><a href="#" title="#"></a></li>
+        <li class="icon youtube"><a href="#" title="#"></a></li>
+        <li class="icon pinterest"><a href="#" title="#"></a></li>
+    </ul>
+    <p class="center enterpriseName">© 2020 FIRST STEP DESIGN</p>
+    <a href="#intro" id="goUp" class="icon-keyboard_arrow_left">
+        <!-- <i></i> -->
+    </a>
+</footer>
+
+</body>
+</html>
+<script src="assets/js/headerCtrl.js"></script>
+<script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
+<script src="assets/js/goUpCtrl.js"></script>
+<script src="assets/js/carrusel.js"></script>
+<script src="assets/js/supportsWebP.js"></script>
+<script>
+    let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
+</script>

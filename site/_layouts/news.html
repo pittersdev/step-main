@@ -1,0 +1,21 @@
+---
+type: news
+description: "View news on First Step's website"
+---
+{%      include head.html               %}
+{%      include header.html             %}
+{%      include home/sidebar.html       %}
+<main>
+    {%          include news/list.html            %}
+</main>
+{%              include home/contact.html          %}
+{%              include footer.html                %}
+<script src="assets/js/headerCtrl.js"></script>
+<script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
+<script src="assets/js/goUpCtrl.js"></script>
+<script src="assets/js/carrusel.js"></script>
+<script src="assets/js/supportsWebP.js"></script>
+<script>
+    let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
+</script>

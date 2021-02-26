@@ -1,0 +1,167 @@
+/* Q&A */
+
+#qa {
+    background: var(--subBgColor);
+}
+
+#qa ul.minimal {
+    max-width: 280px;
+    display: table;
+    margin: 0 auto 40px auto;
+}
+
+@media (min-width: 960px) {
+    #qa ul.minimal {
+        max-width: 560px;
+    }
+}
+
+#qa ul.minimal li {
+    width: 280px;
+    height: 315px;
+    display: table;
+    text-align: center;
+    position: relative;
+}
+
+#qa ul.minimal li.voice {
+    margin: 0 0 60px 0;
+}
+
+#qa ul.minimal li .image {
+    position: relative;
+}
+
+#qa ul.minimal li .image::after,
+#contact::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--mainColor);
+    opacity: .6;
+    content: "";
+}
+
+#qa ul.minimal li .image {
+    padding: 15px 20px 0 20px;
+    /* horizontal padding + vertical centering for <p> & <h2> */
+}
+
+#qa ul.minimal li.voice .image {
+    background-image: url('../img/home/img.jpg');
+    width: 100%;
+    height: 220px;
+}
+
+#qa ul.minimal li.qa .image {
+    background-image: url('../img/home/img-1.jpg');
+    width: 100%;
+    height: 220px;
+    color: var(--bgColor);
+}
+
+#qa ul.minimal li .image p {
+    width: 260px;
+    /* margin: 50px 10px 0 10px; */
+    /* padding: 0 20px 0 20px ; */
+    color: var(--bgColor);
+    position: relative;
+    font-size: 14px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    z-index: 90;
+}
+
+#qa ul.minimal li .image h2 {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--bgColor);
+    position: relative;
+    z-index: 90;
+}
+
+#qa ul.minimal li .wrapper {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: calc(100% - 20px);
+    /* we need to cut 10px from left and 10px from right, so -> 20px */
+    padding: 15px 20px 15px 20px;
+    /* separation between text & icon will be set on the icon itself */
+    background: var(--bgColor);
+}
+
+#qa ul.minimal li p.text {
+    /* floating text on front of the image */
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+}
+
+#qa ul.minimal li p.text::before {
+    width: 80px;
+    height: 0;
+    border: 1px solid var(--planeColor);
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: calc(100% / 2 - 40px);
+}
+
+@media (min-width: 768px) {
+    #qa ul.minimal {
+        max-width: 630px;
+    }
+    #qa ul.minimal li {
+        float: left;
+        width: 280px;
+    }
+    #qa ul.minimal li .wrapper {
+        width: calc(100% - 20px);
+        /* we need to cut 10px from left and 10px from right, so -> 20px */
+        padding: 40px 20px 0 20px;
+        /* separation between text & icon will be set on the icon itself */
+    }
+    #qa ul.minimal li p.text::before {
+        top: -30px;
+    }
+    #qa ul.minimal li.voice {
+        margin: 0 30px 0 0;
+    }
+    /* #qa ul.minimal li .image{
+        height: 204px;
+        
+    } */
+    /* #qa ul.minimal li .image p {
+        width: 299px;
+        margin: 0 20px 0 20px;
+        padding: 0 20px 0 20px ; 
+
+    }   */
+}
+
+@media (min-width: 1280px) {
+    #qa ul.minimal {
+        max-width: 690px;
+    }
+    #qa ul.minimal li {
+        width: 320px;
+    }
+    #qa ul.minimal li.voice {
+        margin: 0 50px 0 0;
+    }
+    #qa ul.minimal li .image {
+        height: 190px;
+        padding: 28px 28px 0px 28px;
+    }
+    #qa ul.minimal li .wrapper {
+        top: 180px;
+    }
+    /* #qa ul.minimal li p.text::before {
+        top: -30px;
+    } */
+}

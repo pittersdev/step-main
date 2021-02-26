@@ -1,0 +1,33 @@
+---
+type: home
+description: "Official website of 1Step: experts in web design"
+---
+{%      include head.html               %}
+{%      include header.html             %}
+{%      include home/sidebar.html       %}
+<main>
+    {%          include home/intro.html            %}
+    {%          include home/news.html             %}
+    {%          include home/services.html         %}
+    {%          include home/works.html            %}
+    {%          include home/aboutUs.html          %}
+    {%          include home/productionFee.html    %}
+    {%          include home/blog.html             %}
+    {%          include home/flow.html             %}
+    {%          include home/qa.html               %}
+</main>
+{%              include home/contact.html          %}
+{%              include footer.html                %}
+<script src="assets/js/headerCtrl.js"></script>
+<script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
+<script src="assets/js/goUpCtrl.js"></script>
+<script src="assets/js/carrusel.js"></script>
+<script src="assets/js/supportsWebP.js"></script>
+<script>
+    let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
+    // supportsWebP(function(support) {
+    //     if(!support)
+    //     document.getElementsByClassName('js')[0].classList.add('noWebP')
+    // });
+</script>

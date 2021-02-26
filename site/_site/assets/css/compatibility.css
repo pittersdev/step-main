@@ -1,0 +1,21 @@
+body.noWebP #intro .image {
+    background-image: url('../img/home/bg.jpg') !important;
+}
+body.noWebP #aboutUs .image {
+    background-image: url('../img/home/bg-4.jpg') !important;
+}
+body.noWebP #contact {
+    background: url('../img/home/img-2.jpg') center / cover no-repeat !important;
+}
+body.noWebP #services ul#conclusionServices li.webDesign .image {
+    background-image: url('../img/home/01topsample.jpg') !important; /* IE11 doesn't support webp */
+}
+body.noWebP #services ul#conclusionServices li.updateAndSupport .image {
+    background-image: url('../img/home/02topsample.jpg') !important; /* IE11 doesn't support webp */
+}
+body.noWebP #services ul#conclusionServices li.graphicProduction .image {
+    background-image: url('../img/home/02_letterhead.jpg') !important; /* IE11 doesn't support webp */
+}
+body.noWebP #productionFee .image {
+    background-image: url('../img/home/product.jpg') !important;
+}

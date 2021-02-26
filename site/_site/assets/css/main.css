@@ -1,0 +1,376 @@
+/* The styling is MOBILE-FIRST, so the @media queries are for control some elements while in larger screens only */
+
+
+/*
+    Brandon Grotesque Medium, brandon-grotesque, weight 500
+    Brandon Grotesque Bold, brandon-grotesque, weight 700
+    Noto Sans CJK JP Bold, noto-sans-cjk-jp, weigth 700
+    Noto Sans CJK JP Medium, noto-sans-cjk-jp, weigth 500
+    Noto Sans CJK JP Regular, noto-sans-cjk-jp, weigth 400
+*/
+
+:root {
+    --mainColor: #021f59;
+    --planeColor: #0a4273;
+    --subColor: #275b88;
+    --pointColor: #047f8c;
+    --paleColor: #d7e2e4;
+    --bgColor: #ffffff;
+    --subBgColor: #ebf3f4;
+    --conversionColor: #a8d991;
+    --conversionColorAlt: #77BF56;
+    --red: #FC2C67;
+    --shadow: rgba(0, 0, 0, .25);
+    /*  */
+    --animation-timing-s: .25s;
+    --animation-timing: .5s;
+    --animation-timing-xl: 1s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+
+/* Common tags */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: var(--bgColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--mainColor);
+    /* h2 only has mainColor? or all titles? CHECK */
+}
+
+h2 {
+    /* margin: 60px 0 25px 0; */
+    margin: 0 0 25px 0;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+h2.en {
+    margin: 0 0 12px 0;
+    color: var(--subColor);
+    font-size: 11px;
+    letter-spacing: 3.5px;
+}
+
+@media (min-width: 1280px) {
+    h2.en {
+        margin: 0 0 20px 0;
+    }
+}
+
+h3 {
+    margin: 40px 0 20px 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin: 30px 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h5 {
+    margin: 30px 0 20px 0;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    margin: 20px 0 20px 0;
+    letter-spacing: 3px;
+}
+
+p.en {
+    letter-spacing: 2px;
+}
+
+h4,
+h5,
+p {
+    color: var(--planeColor);
+}
+
+a {
+    color: var(--pointColor);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section ul h3.title {
+    color: var(--mainColor);
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 700;
+    margin: 27.5px 0 15px 0;
+}
+
+section ul p.details {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 400;
+}
+
+section {
+    width: 100%;
+    display: table;
+    padding: 80px 0 80px 0;
+    clear: both;
+}
+
+lead {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    margin: 60px 0 60px 0;
+    color: var(--mainColor);
+}
+
+
+/* Helpers */
+
+ul.minimal,
+ol.minimal {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+ul.inline,
+ol.inline {
+    display: table;
+}
+
+ul.inline li,
+ol.inline li {
+    display: block;
+    float: left;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center,
+p.center {
+    text-align: center;
+    display: block;
+}
+
+.icon.center {
+    margin: 0 auto;
+}
+
+.image {
+    background: none center center / cover no-repeat;
+    background-position: 75%;
+}
+
+.separator {
+    width: 80%;
+    height: 1px;
+    margin: 20px auto 20px auto;
+    background: linear-gradient(90deg, transparent 0%, var(--planeColor) 50%, transparent 100%);
+}
+
+
+/* Navigation */
+
+ul li.prev {
+    position: relative;
+}
+
+ul li.prev::before {
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    display: block;
+    content: "";
+    background: url('../img/icon/arrow-right-white.svg') center / contain no-repeat;
+}
+
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        /* margin: 20px; */
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        /* margin: 20px; */
+        width: 60%;
+    }
+}
+
+
+/* Grid */
+
+[class*=grid] {
+    display: table;
+    width: 100%
+}
+
+.grid-2>* {
+    width: 50%;
+    float: left;
+}
+
+.grid-3>* {
+    width: 33.3%;
+    float: left;
+}
+
+.grid-6>* {
+    width: 16.66%;
+    float: left;
+}
+
+.grid-2>* {
+    /* margin only for two first childs */
+    margin: 0 10px 0 10px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    float: right;
+}
+
+
+/* Home fade in animation */
+
+.fadeIn {
+    /* margin-top:40px; */
+    /* background:grey; */
+    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    /* -webkit-filter: grayscale(1); */
+    /* filter: grayscale(1); */
+}
+
+.bottom-right.IsVisible {
+    /* for changing the angle who animation fadein enters in scene */
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+.isVisible {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+
+/*  */
+
+.removeDesktop {
+    display: block;
+}
+
+@media (min-width: 1280px) {
+    .removeDesktop {
+        display: none
+    }
+}
+
+
+/* class new l.p */
+
+.grid-5 {
+    display: grid!important;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-22 {
+    display: grid!important;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 960px) {
+    .grid-5 {
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-5 {
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #productionFee .image {
+        width: 100%!important;
+        background-position: center!important;
+    }
+}
+
+@media (max-width: 565px) {
+    #productionFee .image {
+        height: 370px!important;
+    }
+    #qa ul.minimal li .wrapper {
+        top: 160px!important;
+    }
+}
+
+@media (max-width: 480px) {
+    #productionFee .image {
+        height: 260px!important;
+    }
+    .grid-5 {
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    #productionFee .image {
+        height: 230px!important;
+    }
+}
