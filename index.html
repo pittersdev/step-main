@@ -71,6 +71,8 @@
             </a>
             </div>
         </div>
+
+
         <nav class="removeMobile">
             <ul class="minimal inline">
                 <li class="active">
@@ -78,23 +80,27 @@
                 </li>
                 <li class="trigger">
                     <a href="#services" title="#">SERVICE</a>
+
                     <div class="megaMenu grid-3">
-                        <div id="aboutUsImage" class="left image"></div>
+
+                        <img id="myImg" class="left image">
+
                         <ul class="center minimal">
                             <li>
-                                <a href="#">
-                                    <h2 class="en">WEBSITE PRODUCE</h2>
+                                <a onmouseenter="changeImage('assets/img/home/01topsample.jpg')">
+                                    <!-- <div id="aboutUsImage"></div> -->
+                                    <h2 class="en ">WEBSITE PRODUCE</h2>
                                     <h2>Webサイト制作</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/bg-4.jpg')">
                                     <h2 class="en">WEBSITE SUPPORT</h2>
                                     <h2>Webサイトサポート</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/img.jpg')">
                                     <h2 class="en">GRAPHIC PRODUCE</h2>
                                     <h2>フラフィック制作</h2>
                                 </a>
@@ -102,19 +108,19 @@
                         </ul>
                         <ul class="right minimal">
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/01topsample.jpg')">
                                     <h2 class="en">LOGO DESIGN</h2>
                                     <h2>ロゴデザイン</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/bg-4.jpg')">
                                     <h2 class="en">CHARACTER / ILLUSTRATION</h2>
                                     <h2>イラスト・キャラクター</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/img.jpg')">
                                     <h2 class="en">PHOTOGRAPHY</h2>
                                     <h2>写真撮影</h2>
                                 </a>
@@ -134,6 +140,7 @@
                 <li class="trigger">
                     <a href="#contact" title="#">COMPANY</a>
                     <div class="megaMenu grid-3 last">
+
                         <div id="aboutUsImage" class="left image"></div>
                         <ul class="center minimal">
                             <li>
@@ -915,16 +922,26 @@
 </body>
 
 </html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="assets/js/headerCtrl.js"></script>
 <script src="assets/js/sidebarCtrl.js"></script>
 <script src="assets/js/fadeInCtrl.js"></script>
 <script src="assets/js/goUpCtrl.js"></script>
 <script src="assets/js/carrusel.js"></script>
 <script src="assets/js/supportsWebP.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 <script>
     let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
     // supportsWebP(function(support) {
     //     if(!support)
     //     document.getElementsByClassName('js')[0].classList.add('noWebP')
     // });
+
+
+
+
+    function changeImage(imageUrl) {
+        document.getElementById("myImg").src = imageUrl;
+    }
 </script>
