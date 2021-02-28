@@ -19,3 +19,5 @@ function changeSidebarSubMenuStatus(id) {
     document.getElementById(`subMenu${id}`).style.display == 'none' ? document.getElementById(`subMenu${id}`).style.display = 'block' : document.getElementById(`subMenu${id}`).style.display = 'none';
     document.getElementById(`subMenu${id}`).classList[0] == 'trigger' ? document.getElementById(`subMenu${id}`).classList.remove('trigger') : document.getElementById(`subMenu${id}`).classList.add('trigger');
 }
+
+

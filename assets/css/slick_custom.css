@@ -1,0 +1,276 @@
+@media (max-width: 1920px) {
+   .main-banner__img {
+    width: 100%;
+    height: calc(81vh - 60px);
+    background-image: url(../img/home/bg.webp);
+}
+.slider_2 {
+    margin-top: -12rem;
+}
+}
+@media (max-width: 1280px) {
+  .ccard_2{
+    height: 276px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+    background: white;
+    transition: margin var(--animation-timing) ease-in-out;
+    transition: var(--animation-timing-xl);
+}
+.image_2 {
+    width: 100%;
+    height: 190px;
+    background-image: url(https://blog.hubspot.com/hubfs/design-projects.jpg) !important;
+    background: none center center / cover no-repeat;
+    background-position: 75%;
+}
+
+.ccard_2  h2{
+	    width: 100%;
+    height: 86px;
+    font-size: 21px;
+    padding: 25px;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-weight: 500;
+}
+button.slick-prev.slick-arrow {
+    position: absolute;
+    width: 55px;
+    height: 57px;
+    top: 46%;
+    background-color: white;
+    cursor: pointer;
+    left: 20px;
+    z-index: 1;
+    letter-spacing: 10px;
+    text-align: left;
+    background-image: url(../img/icon/arrow-left-blue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button.slick-next.slick-arrow {
+    text-align: right;
+    background-image: url(../img/icon/arrow-right-blue.svg);
+    position: absolute;
+    width: 55px;
+    height: 57px;
+    top: 46%;
+    background-color: white;
+    cursor: pointer;
+    right: 31px !important;
+    position: absolute;
+    z-index: 999;
+    letter-spacing: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    .main-banner__img{
+        width: 100%;
+         height: calc(100vh - 60px);
+    background-image: url(../img/home/bg.webp);
+  
+    
+    }
+    div#intro {
+    width: 100%;
+    padding: 0;
+    height: 0;
+    padding-left: 0rem;
+    /* height: calc(100vh - 60px); */
+    margin: 0;
+    padding-left: 3rem;
+}
+.left-2 {
+    width: 50%;
+    float: left;
+    position: absolute;
+    z-index: 999;
+    padding-top: 15rem;
+}
+.main_banner-2 {
+    width: 75%;
+    float: right;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+   .left-2 {
+    width: 50%;
+    float: left;
+    position: absolute;
+    z-index: 999;
+}
+
+.ccard-3 {
+    height: 294px !important;
+    padding: 0 18px 0 15px;
+    margin: 0 10px 0 5px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background: var(--paleColor);
+    transition: margin var(--animation-timing) ease-in-out;
+    transition: 2s;
+}
+
+.ccard-3 p {
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-size: 12px;
+    font-weight: regular;
+}
+h3.title-3 {
+    color: var(--planeColor);
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: bold;
+}
+
+h3.title-3::after {
+    width: 80px;
+    height: 0;
+    margin-top: 40px;
+    border: 1px solid var(--planeColor);
+    content: "";
+    position: absolute;
+    top: 7.5%;
+    left: calc(100% / 2 - 40px);
+}
+
+.icono-3 {
+    width: 8px;
+    height: 8px;
+    background: black;
+    position: relative;
+    left: 50%;
+}
+
+.slider_2 {
+    margin-top: -117px;
+}
+.main_down_slider {
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+.flecha-slider_second-next{
+	    text-align: right;
+    background-image: url(../img/icon/arrow-right-blue.svg);
+    position: absolute;
+    width: 55px;
+    height: 57px;
+    top: 146rem;
+    background-color: white;
+    cursor: pointer;
+    right: 31px !important;
+    position: absolute;
+    z-index: 999;
+    letter-spacing: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flecha-slider_second-prev{
+	 position: absolute;
+    width: 55px;
+    height: 57px;
+     top: 146rem;
+    background-color: white;
+    cursor: pointer;
+    left: 23px;
+    z-index: 1;
+    letter-spacing: 10px;
+    text-align: left;
+    background-image: url(../img/icon/arrow-left-blue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body > main > div.main_down_slider > div > button.slick-next.slick-arrow{
+	    text-align: right;
+    background-image: url(../img/icon/arrow-right-blue.svg);
+    position: absolute;
+    width: 55px;
+    height: 57px;
+    top: 51%;
+    background-color: white;
+    cursor: pointer;
+    right: 31px !important;
+    position: absolute;
+    z-index: 99;
+    letter-spacing: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body > main > div.main_down_slider > div > button.slick-prev.slick-arrow{
+	    position: absolute;
+    width: 55px;
+    height: 57px;
+    top: 53%;
+    background-color: white;
+    cursor: pointer;
+    left: 23px;
+    z-index: 1;
+    letter-spacing: 10px;
+    text-align: left;
+    background-image: url(../img/icon/arrow-left-blue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.ccard_2:hover {
+      margin: -30px 20px 0 16px;
+    box-shadow: 0 5px 20px var(--shadow);
+}
+.ccard-3:hover {
+      margin: -30px 20px 0 16px;
+    box-shadow: 0 5px 20px var(--shadow);
+}
+.main-slider-second {
+    background: var(--paleColor);
+    width: 100%;	
+    padding: 80px 0 80px 0;
+}
+.slider_second{
+    width: 100%;
+    height: 360px;
+    padding-top: 30px;
+    background: var(--paleColor);
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.slider_2{
+    width: 100%;
+    height: 360px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+}
+#inicio > button.slick-prev.slick-arrow{
+	display: none !important;
+}
+#inicio > button.slick-next.slick-arrow{
+	display: none !important;
+}
+
+}
+
+.logo {
+    background-image: url(../img/FirstLogo.png);
+    background-size: cover;
+    width: 200px;
+    height: 36px;
+        margin-bottom: 80px;
+}
+.titile {
+    width: 100%;
+    color: var(--planeColor);
+    font-weight: 600;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}

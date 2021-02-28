@@ -189,12 +189,6 @@ header nav ul li.trigger .megaMenu::before {
      */
 }
 
-header nav ul li.trigger .megaMenu.grid-3 .left.image-2 {
-    width: 290px;
-    height: 330px;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT6A66KnQhkwxpxjmylK5Q8Tcnr4S8fOdFLw&usqp=CAU') center / cover no-repeat;
-}
-
 header nav ul li.trigger .megaMenu::after,
 header nav ul li.trigger .megaMenu.last::after {
     width: 20px;
@@ -237,6 +231,7 @@ header nav ul li.trigger .megaMenu h2 {
 header nav ul li.trigger .megaMenu.grid-3 .left.image {
     width: 290px;
     height: 100%;
+    background: url('https://i.blogs.es/3beac3/getsmart-screen-still/450_1000.jpg') center / cover no-repeat;
 }
 
 header nav ul li.trigger .megaMenu.grid-3 .center,
