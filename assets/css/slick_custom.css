@@ -1,14 +1,14 @@
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
    .main-banner__img {
-    width: 100%;
-    height: calc(81vh - 60px);
-    background-image: url(../img/home/bg.webp);
+    width: 100% !important;
+    height: calc(81vh - 60px) !important;
+    background-image: url(../img/home/bg.webp) !important;
 }
 .slider_2 {
-    margin-top: -12rem;
+    margin-top: -12rem !important;
 }
 }
-@media (min-width: 1280px) {
+
   .ccard_2{
     height: 276px;
     margin: 0 10px 0 10px;
@@ -257,7 +257,7 @@ body > main > div.main_down_slider > div > button.slick-prev.slick-arrow{
 	display: none !important;
 }
 
-}
+
 
 .logo {
     background-image: url(../img/FirstLogo.png);
