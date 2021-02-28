@@ -1,4 +1,4 @@
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
    .main-banner__img {
     width: 100%;
     height: calc(81vh - 60px);
@@ -8,7 +8,7 @@
     margin-top: -12rem;
 }
 }
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .ccard_2{
     height: 276px;
     margin: 0 10px 0 10px;
