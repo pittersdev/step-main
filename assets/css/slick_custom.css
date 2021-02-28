@@ -86,7 +86,7 @@ button.slick-next.slick-arrow {
     width: 50%;
     float: left;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     padding-top: 15rem;
 }
 .main_banner-2 {
@@ -98,10 +98,9 @@ button.slick-next.slick-arrow {
 }
 
    .left-2 {
-    width: 50%;
+    width: 40%;
     float: left;
     position: absolute;
-    z-index: 999;
 }
 
 .ccard-3 {
