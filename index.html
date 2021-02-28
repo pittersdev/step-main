@@ -30,7 +30,7 @@
         Usefull for posts of the blog or any content with &copy
         <meta name="copyright" content="property" />
     -->
-    <link rel="icon" href="assets/img/FirstLogo.png">
+    <link rel="icon" href="assets/img/logo-scort.png">
  <link rel="stylesheet" href="assets/css/slick_custom.css" type="text/css" />
         <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
@@ -97,7 +97,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage('assets/img/home/01topsample.jpg')">
                                     <h2 class="en">WEBSITE SUPPORT</h2>
                                     <h2>Webサイトサポート</h2>
                                 </a>
@@ -143,22 +143,22 @@
                 <li class="trigger">
                     <a href="#contact" title="#">COMPANY</a>
                     <div class="megaMenu grid-3 last">
-                        <div id="aboutUsImage" class="left image"></div>
+                       <img id="myImg-2" class="left image">
                         <ul class="center minimal">
                             <li>
-                                <a href="#">
+                               <a onmouseenter="changeImage2('assets/img/home/bg-4.jpg')">
                                     <h2 class="en">COMPANY GUIDE</h2>
                                     <h2>会社概要</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage2('assets/img/home/01topsample.jpg')">
                                     <h2 class="en">COMPANY PHILOSOPHY</h2>
                                     <h2>会社理念</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                 <a onmouseenter="changeImage2('assets/img/home/img.jpg')">
                                     <h2 class="en">HISTORY</h2>
                                     <h2>沿革</h2>
                                 </a>
@@ -166,19 +166,19 @@
                         </ul>
                         <ul class="right minimal">
                             <li>
-                                <a href="#">
+                               <a onmouseenter="changeImage2('assets/img/home/01topsample.jpg')">
                                     <h2 class="en">MESSAGE</h2>
                                     <h2>代表者挨拶</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage2('assets/img/home/img.jpg')">
                                     <h2 class="en">STAFF</h2>
                                     <h2>スタッフ紹介</h2>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a onmouseenter="changeImage2('assets/img/home/01topsample.jpg')">
                                     <h2 class="en">ACCESS</h2>
                                     <h2>アクセス</h2>
                                 </a>
@@ -1214,5 +1214,8 @@
 <script>
     function changeImage(imageUrl) {
         document.getElementById("myImg").src = imageUrl;
+    }
+    function changeImage2(imageUrl) {
+        document.getElementById("myImg-2").src = imageUrl;
     }
 </script>
