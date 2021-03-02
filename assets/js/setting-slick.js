@@ -68,7 +68,7 @@ $('.slider_2').slick({
     infinite: true,
     autoplay: false,
     Arrows: true,
-    speed: 3000,
+    speed: 1500,
     pauseOnHover: true,
     slidesToShow: 6,
     cssEase: 'linear',
