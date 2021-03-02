@@ -7,9 +7,18 @@
     .slider_2 {
         margin-top: -12rem !important;
     }
-    #productionFee .image {
-        margin-right: 100px !important;
-    }
+    .ccard-3 {
+    height: 265px !important;
+    padding: 0 15px 0 14px;
+    margin: 0 12px 0 12px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background: var(--paleColor);
+    transition: margin var(--animation-timing) ease-in-out;
+    transition: 2s;
+}
+   
 }
 
 .ccard_2 {
@@ -39,6 +48,7 @@
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 500;
 }
+
 
 button.slick-prev.slick-arrow {
     position: absolute;
@@ -292,11 +302,51 @@ body>main>div.main_down_slider>div>button.slick-prev.slick-arrow {
     font-size: 16px;
     font-weight: bold;
 }
+   .customPrevNavbar{
+        width: calc(100% - 250px);
+        float: left;
+        font-family: noto-sans-cjk-jp, sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        list-style: none;
+         color: var(--mainColor);
+        padding: 0;
+        margin: 0;
+        margin-top: -17px;
+    }
+    .prevNabarItem {
+    display: flex !important;
+}
+.prevNabarItem {
+    display: flex !important;
+    align-items: center;
+    padding-left: 3rem;
+}
+li.last-custom {
+    margin-left: 7rem;
+}
+section#news {
+    display: block !important;
+}
+    .divider-custom {
+    clear: none;
+    width: auto;
+    padding: 0 50px 0 0;
+    margin: 0 50px 0 0;
+    border-right: 1px solid var(--paleColor);
+}
+.slick-track {
+    margin: 20px 0 25px 0!important;
+}
 
 @media (max-width: 1024px) {
     .left-2 {
         padding-top: 21rem;
     }
+    .slick-track {
+    margin: 20px 0 25px 0!important;
+}
+    
     .main-banner__img {
         width: 100%;
         height: calc(100vh - 60px);

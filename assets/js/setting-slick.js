@@ -68,7 +68,7 @@ $('.slider_2').slick({
     infinite: true,
     autoplay: false,
     Arrows: true,
-    speed: 1500,
+    speed: 1000,
     pauseOnHover: true,
     slidesToShow: 6,
     cssEase: 'linear',
@@ -116,10 +116,9 @@ $('.slider_second').slick({
     dots: true,
     infinite: true,
     speed: 800,
-
     pauseOnHover: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 8,
+    slidesToScroll: 8,
     responsive: [{
             breakpoint: 1281,
             settings: {
@@ -146,5 +145,72 @@ $('.slider_second').slick({
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
+    ]
+});
+
+
+    
+$('.preNavbar').slick({
+    dots: false,
+    prevArrow: document.querySelector("#news > ul.minimal.inline.nav.simple > li.prev"),
+    nextArrow: document.querySelector("#news > ul.minimal.inline.nav.simple > li.next"),
+    autoplay: false,
+    speed: 1100,
+    cssEase: "ease-in",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 1200,
+            settings: {
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                speed: 1100,
+                cssEase: "ease-in",
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                speed: 1100,
+                cssEase: "ease-in",
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                speed: 1100,
+                cssEase: "ease-in",
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+            }
+
+        },
+        {
+            breakpoint: 375,
+            settings: {
+                dots: false, 
+                arrows: false,
+                autoplay: true,
+                speed: 1100,
+                cssEase: "ease-in",
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+
+            }
+
+        }
     ]
 });

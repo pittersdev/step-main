@@ -74,7 +74,7 @@ header .noBorder:hover {
 }
 
 header.alt {
-    height: auto;
+        height: 6rem;
     padding: 10px 30px 10px 30px;
 }
 
