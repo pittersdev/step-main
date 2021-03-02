@@ -72,12 +72,12 @@ $('.slider_2').slick({
     pauseOnHover: true,
     slidesToShow: 6,
     cssEase: 'linear',
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     responsive: [{
             breakpoint: 1280,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
