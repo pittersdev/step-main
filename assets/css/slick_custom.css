@@ -18,7 +18,18 @@
     transition: margin var(--animation-timing) ease-in-out;
     transition: 2s;
 }
+.main-banner__content {
+    margin-top: 85px !important;
+    margin-bottom: -24px !important;
+}
    
+}
+.slider_2 {
+    margin-top: -188px;
+}
+.main-banner__content {
+    margin-top: -21px;
+    margin-bottom: -25px;
 }
 
 .ccard_2 {
@@ -165,10 +176,6 @@ h3.title-3::after {
     background: black;
     position: relative;
     left: 50%;
-}
-
-.slider_2 {
-    margin-top: -117px;
 }
 
 .main_down_slider {

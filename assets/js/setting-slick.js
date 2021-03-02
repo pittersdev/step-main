@@ -70,13 +70,13 @@ $('.slider_2').slick({
     Arrows: true,
     speed: 1000,
     pauseOnHover: true,
-    slidesToShow: 6,
+    slidesToShow: 8,
     cssEase: 'linear',
     slidesToScroll: 1,
     responsive: [{
-            breakpoint: 1280,
+            breakpoint: 1300,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 6,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -117,8 +117,8 @@ $('.slider_second').slick({
     infinite: true,
     speed: 800,
     pauseOnHover: true,
-    slidesToShow: 8,
-    slidesToScroll: 8,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     responsive: [{
             breakpoint: 1281,
             settings: {
