@@ -277,6 +277,9 @@ body > main > div.main_down_slider > div > button.slick-prev.slick-arrow{
     font-size: 16px;
     font-weight: bold;
 }
+#productionFee .image {
+    margin-right: 111px;
+    }
 @media (max-width: 1024px) {
 
 .left-2 {
