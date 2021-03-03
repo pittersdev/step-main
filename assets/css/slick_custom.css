@@ -7,10 +7,52 @@
     .slider_2 {
         margin-top: -12rem !important;
     }
+    #blog div.left {
+    margin-top: 60px !important;
+    padding: 26px 22px 0px 119px !important;
+}
+#qa ul.minimal li.voice {
+    margin: 0 258px 0 0 !important;
+}
+#qa ul.minimal li .image p {
+    margin-top: 32px !important;
+}
+#qa ul.minimal {
+    max-width: 905px !important;
+}
+#qa ul.minimal {
+    margin-left: 22rem !important;
+}
+#qa ul.minimal li.qa .image {
+    background-image: url(../img/home/img-1.jpg);
+    width: 167% !important;
+    height: 419px !important;
+    color: var(--bgColor);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#qa ul.minimal li.voice .image {
+    background-image: url(../img/home/img.jpg);
+    width: 100%;
+    height: 220px;
+    width: 167% !important;
+    height: 419px !important;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+#qa ul.minimal li .wrapper {
+    width: calc(165% - 22px) !important;
+    padding: 64px 20px 0 20px !important;
+    margin-top: 8rem !important;
+}
     .ccard-3 {
     height: 265px !important;
-    padding: 0 15px 0 14px;
-    margin: 0 12px 0 12px;
+    padding: 0 15px 0 14px !important;
+    margin: 0 12px 0 12px !important;
     position: relative;
     bottom: 0;
     text-align: center;
@@ -18,11 +60,26 @@
     transition: margin var(--animation-timing) ease-in-out;
     transition: 2s;
 }
+p.details {
+    font-weight: 400 !important;
+    margin: 20px 10px 20px 11px !important;
+    letter-spacing: 3px;
+}
 .main-banner__content {
-    margin-top: 85px !important;
+    margin-top: -20px !important;
     margin-bottom: -24px !important;
 }
    
+}
+
+#qa ul.minimal li.voice .image:hover {
+    transform: scale(1.2);          
+    transition: all 0.8s;
+
+}
+#qa ul.minimal li.qa .image:hover {
+    transform: scale(1.2);          
+    transition: all 0.8s;
 }
 .slider_2 {
     margin-top: -188px;
@@ -134,7 +191,7 @@ div#intro {
 }
 
 .ccard-3 {
-    height: 294px !important;
+    height: 309px !important;
     padding: 0 18px 0 15px;
     margin: 0 12px 0 12px;
     position: relative;
@@ -152,9 +209,12 @@ div#intro {
 }
 
 h3.title-3 {
-    color: var(--planeColor);
+       color: var(--planeColor);
     margin-bottom: 10px;
     font-size: 12px;
+    margin-top: 22px;
+    margin-bottom: 52px;
+    /* margin-bottom: 2px; */
     font-family: brandon-grotesque, sans-serif;
     font-weight: bold;
 }
