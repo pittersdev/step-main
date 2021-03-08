@@ -1,6 +1,8 @@
 $('.slick_banner').slick({
     dots: false,
     arrows: false,
+    accessibility: false,
+    fade: true,
     autoplay: true,
     speed: 1100,
     cssEase: "ease-in",
@@ -67,8 +69,9 @@ $('.slider_2').slick({
     dots: false,
     infinite: true,
     autoplay: false,
+    accessibility: false,
     Arrows: true,
-    speed: 1000,
+    speed: 400,
     pauseOnHover: true,
     slidesToShow: 8,
     cssEase: 'linear',
@@ -116,14 +119,15 @@ $('.slider_second').slick({
     dots: true,
     infinite: true,
     speed: 800,
+    accessibility: false,
     pauseOnHover: true,
     slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     responsive: [{
             breakpoint: 1281,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
@@ -132,7 +136,7 @@ $('.slider_second').slick({
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         },
         {
@@ -156,6 +160,7 @@ $('.preNavbar').slick({
     nextArrow: document.querySelector("#news > ul.minimal.inline.nav.simple > li.next"),
     autoplay: false,
     speed: 1100,
+    accessibility: false,
     cssEase: "ease-in",
     slidesToShow: 1,
     slidesToScroll: 1,
