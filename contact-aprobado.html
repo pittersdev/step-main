@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Step Design</title>
+    <!-- OpenGraph SEO. Note that og:image, og:video, etc support multiple instances. The media will be transformed in an array for social networks -->
+    <meta property="og:title" content="First Step Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:4000" /> <!-- Example -->
+    <meta property="og:image" content="https://1step.com/assets/img/example.jpg" />
+    <meta property="og:image:alt" content="Here you can put a description of the image" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- 
+        This could be usefull in the future :)
+        <meta property="og:video" content="" /> 
+    -->
+    <!-- Native SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Contact with Us" />
+    <meta name="keywords" content="web, development, design, programming, service" /> <!-- Useless for Google -->
+    <!-- 
+        Usefull for posts of the blog
+        <meta name="author" content="author" />
+    -->
+    <!--
+        Usefull for posts of the blog or any content with &copy
+        <meta name="copyright" content="property" />
+    -->
+    <!-- Basic CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/header.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/news.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/intro.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/services.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/works.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/aboutUs.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/productionFee.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/blog.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/flow.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/qa.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/compatibility.css" type="text/css" /> <!-- Here, we are loading legacy image formats -->
+    <link rel="stylesheet" href="assets/css/button.css" type="text/css" />
+    <!-- Icon pack -->
+    <link rel="stylesheet" href="assets/css/icons.css" type="text/css" />
+    <!-- Fonts CDNs (later it'll be merged with "chunk.css" and fonts stored locally, not in CDN ) -->
+    <link rel="stylesheet" href="https://use.typekit.net/psc4ucl.css" /> <!-- Brandon Grotesque -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body class="js">
+<main>
+    <div class="container">
+        <!-- This header belongs to CONTACT WIREFRAME -->
+<header class="grid-2 formPage">
+    <div class="logo"></div>
+    <div>
+        <h2>
+            <i class="icon-phone"></i>
+            052-414-7327
+        </h2>
+        <p>受付時間は9:00-18:00　定休日は土日</p>
+    </div>
+</header>
+        <section id="form">
+    <h2 class="en">CONTACT FORM / ESTIMATE</h2>
+    <h2 class="principal">お問い合わせフォーム・無料見積もり</h2>
+    <p class="principal">
+        お見積やお打ち合わせに関すること、その他ご質問やご要望などお気軽にお問い合わせください。<br />
+        お問い合わせは、下記のフォームより内容をご記入の上、フォーム下のボタンをクリックしてください。お問い合わせ内容を確認後、２営業日以内に電話またはメールにてご連絡いたします。数日経っても弊社からの連絡がない場合は、お手数ですが弊社までご一報ください。
+    </p>
+    <ul id="stepGuide" class="grid-3">
+        <li class="active">
+            <p>入力</p>
+        </li>
+        <li class="active">
+            <p>確認</p>
+        </li>
+        <li class="active">
+            <p>完了</p>
+        </li>
+    </ul>
+
+    <div class="margin">
+    <h3>お問合せ内容 <span class="required">※必須</span></h3>
+    <ul class="grid-2">
+        <li>
+            <input type="checkbox" name="" id="webDesign">
+            <label for="webDesign">ホームページ制作</label> 
+        </li>
+        <li>
+            <input type="checkbox" name="" id="illustration">
+            <label for="illustration">イラス・キャラクター制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="support">
+            <label for="support">運用・サポートについて</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="freeAssistance">
+            <label for="freeAssistance">無料見積</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="graphicProduction">
+            <label for="graphicProduction">印刷物媒体・グラフィック制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="meetingRequest">
+            <label for="meetingRequest">打ち合わせ依頼</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="logoProduction">
+            <label for="logoProduction">ロゴ制作</label>
+        </li>
+        <li>
+            <input type="checkbox" name="" id="other">
+            <label for="other">その他</label>
+        </li>
+    </ul>
+    </div>
+
+    <div class="margin">
+        <h3>お名前 <span class="required">※必須</span></h3>
+        <input type="text" id="name" placeholder="田中　太郎" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>ふりがな <span class="required">※必須</span></h3>
+        <input type="text" id="furigana" placeholder="やまだ　たろう" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>メールアドレス <span class="required">※必須</span></h3>
+        <input type="text" id="email" placeholder="メールアドレス" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>電話番号 <span>ハイフン不要</span></h3>
+        <input type="text" id="telephone" placeholder="例）09000000000" autocomplete="off" />
+    </div>
+
+    <div class="margin">
+        <h3>企業・店舗名 <span class="required">※必須</span></h3>
+        <input type="text" id="enterpriseName" />
+    </div>
+
+    <div id="postalCodeWrapper" class="margin">
+        <h3>郵便番号 <span>ハイフン不要</span></h3>
+        <div class="addOn">〒</div> <!-- aside of #postalCode -->
+        <input type="number" name="" placeholder="例）1000001" id="postalCode" autocomplete="off" />
+        <button class="check">住所を自動入力</button> <!-- Ingrese automáticamente la dirección -->
+    </div>
+
+    <div class="margin">
+        <h3>住所</h3>
+        <input type="text" id="direction">
+    </div>
+
+    <div class="margin">
+        <h3>項目名ラジオタイプ</h3>
+        <div class="grid-2">
+            <div>
+                <input type="radio" name="radioTest" id="radioTest01">
+                <label for="radioTest01">項目ラジオ01</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest02">
+                <label for="radioTest02">項目ラジオ02</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest03">
+                <label for="radioTest3">項目ラジオ03</label>
+            </div>
+            <div>
+                <input type="radio" name="radioTest" id="radioTest04">
+                <label for="radioTest04">項目ラジオ04</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="margin">
+        <h3>項目セレクト</h3> <!-- Seleccionar articulo -->
+        <select name="article" id="article">
+            <option value="">当てはまるものを選択してください</option>
+        </select>
+    </div>
+
+    <div class="margin">
+        <h3>お問合せ内容 <span class="required">※必須</span></h3>
+        <textarea name="" id=""></textarea>
+    </div>
+
+    <div class="margin">
+        <h3>個人情報の取り扱いについて</h3>
+        <p class="border">
+            本入力フォーム及び、メールでご連絡頂きましたお客様の個人情報につきましては、厳重に管理を行っております。法令等に基づき正規の手続きによって司法審査機関により開示要求が行われた場合を除き、第三者に開示もしくは、提供することはございません。
+        </p>
+    </div>
+
+    <input type="checkbox" name="" id="TyC">
+    <label for="TyC">個人情報の取り扱いに同意する</label>
+
+    <button class="contact">確認</button>
+</section>
+    </div>
+</main>
+<section id="contact" class="fadeIn">
+    <div class="center container">
+        <div class="left">
+            <h2 class="en">CONTACT</h2>
+            <h2>
+                伝えたいメッセージの<br />
+                魅力を引き出すデザイン
+            </h2>
+        </div>
+        <div class="right">
+            <button  class="button bright swipe icon email">お問い合わせ・無料見積もり</button>
+            <div class="left">
+                <h4>お電話でのお問い合わせ</h4>
+            </div>
+            <div class="right">
+                <p>
+                    <i class="icon-phone"></i>
+                    <strong>052-414-7327</strong>
+                </p>
+            </div>
+            <p class="legend">※受付時間は9:00〜18:00　定休日は土日（年末年始を除く）</p>
+        </div>
+    </div>
+</section>
+
+<script src="assets/js/headerCtrl.js"></script>
+<script src="assets/js/sidebarCtrl.js"></script>
+<script src="assets/js/fadeInCtrl.js"></script>
+<script src="assets/js/goUpCtrl.js"></script>
+<script src="assets/js/carrusel.js"></script>
+<script src="assets/js/supportsWebP.js"></script>
+<script>
+    let sidebarLock = false; // if TRUE, the logo behaviour depends of the sidebar
+</script>
