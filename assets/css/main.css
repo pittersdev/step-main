@@ -227,11 +227,17 @@ ul li.prev::before {
     }
 }
 
-@media (min-width: 1280px) {
-    .container {
-        /* margin: 20px; */
-        width: 60%;
-    }
+@media (min-width: 1200px) {
+ .container {
+    /* margin: 20px; */
+    width: 90%;
+    padding-top: 3rem;
+}
+.navbar-rigth {
+    width: 67% !important;
+    float: right !important;
+    margin-right: -27rem !important;
+}
 }
 
 

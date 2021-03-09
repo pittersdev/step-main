@@ -4,9 +4,14 @@
         height: calc(81vh - 60px) !important;
         background-image: url(../img/home/bg.webp) !important;
     }
+ 
     .slider_2 {
         margin-top: -12rem !important;
     }
+    .container {
+    width: 85% !important;
+    padding-top: 7rem;
+}
     #blog div.left {
     margin-top: 60px !important;
     padding: 26px 22px 0px 119px !important;
@@ -487,4 +492,12 @@ ul.minimal.inline.pagenav {
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 400;
     font-size: 13px;
+}
+section#form h2.principal, section#form p.principal {
+    margin-bottom: 80px !important;
+}
+   .navbar-rigth {
+    width: 51% !important;
+    float: right !important;
+    margin-right: -31rem !important;
 }
